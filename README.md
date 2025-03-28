@@ -11,9 +11,12 @@ A simple Flutter app to track your monthly expenses, built for learning and pers
 ## Screenshots  
 - Home Screen: List of months  
 ![alt text](image.png)
+
 - Detail Screen: Expenses for a selected month 
+
  ![alt text](image-1.png)
 - Add Screen: Form to add a new expense
+
 ![alt text](image-2.png)
 
 ## Getting Started
@@ -25,7 +28,7 @@ A simple Flutter app to track your monthly expenses, built for learning and pers
 
 ### Installation
 1. **Clone the Repository**:
-   git clone https://github.com/AvezChadchan/expense_tracker.git
+   git clone https://github.com/AvezChadchan/Expenso.git
    cd expense_tracker
 2. **Install Dependencies**:
 flutter pub get

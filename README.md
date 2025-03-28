@@ -37,20 +37,25 @@ flutter run
 
 **Usage**
 **Home Screen**: See a list of months with expenses.
+
 **View Details**: Tap a month to see its expenses and total.
+
 **Add Expense**:
 Click the + button on the home screen.
 Enter the amount and category.
 Press "Add" to save the expense.
+
 **Data Persistence**: Expenses are saved locally and persist between app restarts.
+
 **Project Structure**:
 lib/main.dart: Main app file with all screens and logic.
 pubspec.yaml: Lists dependencies (shared_preferences, intl).
+
 **Dependencies**:
 shared_preferences: For local storage.
 
-**Contributing**
+**Contributing**:
 This is a learning project, but feel free to fork and experiment! If you have suggestions, open an issue or submit a pull request.
 
-**About**
-Built by Avez Chadchan as part of my Flutter learning journey. Inspired by the need to track expenses without a backend. Thanks to Grok (xAI) for guidance!
+**About**:
+Built by **Avez Chadchan** as part of my Flutter learning journey. Inspired by the need to track expenses without a backend. Thanks to Grok (xAI) for guidance!

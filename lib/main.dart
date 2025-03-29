@@ -69,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> saveExpenses() async {
     final prefs = await SharedPreferences.getInstance();
     final expensesJson = jsonEncode(expenses);
+    await prefs.setString('expenses', expensesJson);
   }
 
   Set<String> getUniqueMonths() {
@@ -93,7 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(
           "Expenso",
           style: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.bold, color: Color(0xFFCCD6F6)),
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFFCCD6F6)),
         ),
         backgroundColor: Color(0xFF020C1B),
         centerTitle: true,
@@ -142,7 +145,11 @@ class _MyHomePageState extends State<MyHomePage> {
               MaterialPageRoute(
                   builder: (context) => AddExpenseScreen(onAdd: addExpense)));
         },
-        child: Icon(Icons.add,color: Colors.white,size: 40,),
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+          size: 40,
+        ),
       ),
     );
   }
